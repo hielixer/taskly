@@ -2,6 +2,8 @@
 
 A simple, fast task tracker built with **vanilla HTML, CSS and JavaScript**. No frameworks, no build step, just open `index.html`.
 
+**[Live demo](https://hielixer.github.io/taskly/)**
+
 ## Features
 
 - Add, complete, edit (double-click) and delete tasks
@@ -14,7 +16,7 @@ A simple, fast task tracker built with **vanilla HTML, CSS and JavaScript**. No 
 ## Getting started
 
 ```bash
-git clone https://github.com/<your-username>/taskly.git
+git clone https://github.com/hielixer/taskly.git
 cd taskly
 ```
 
