@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Taskly - a simple, fast task tracker built with vanilla JavaScript." />
+  <title>Taskly - Simple Task Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="app-header">
+      <div>
+        <h1>Taskly</h1>
+        <p class="subtitle">Keep track of what matters today.</p>
+      </div>
+      <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <span aria-hidden="true">&#9680;</span>
+      </button>
+    </header>
+
+    <form id="task-form" class="task-form" autocomplete="off">
+      <label for="task-input" class="visually-hidden">New task</label>
+      <input id="task-input" type="text" placeholder="Add a new task..." maxlength="120" required />
+      <button type="submit" class="btn btn-primary">Add</button>
+    </form>
+
+    <div class="toolbar">
+      <div class="filters" role="group" aria-label="Filter tasks">
+        <button type="button" class="filter active" data-filter="all">All</button>
+        <button type="button" class="filter" data-filter="active">Active</button>
+        <button type="button" class="filter" data-filter="completed">Completed</button>
+      </div>
+      <span id="count" class="count" aria-live="polite"></span>
+    </div>
+
+    <ul id="task-list" class="task-list"></ul>
+    <p id="empty-state" class="empty-state" hidden>Nothing here yet. Add your first task above.</p>
+
+    <footer class="app-footer">
+      <button id="clear-completed" type="button" class="btn btn-ghost">Clear completed</button>
+      <span class="hint">Double-click a task to edit it.</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
